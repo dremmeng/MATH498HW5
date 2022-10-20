@@ -147,10 +147,11 @@ F30Approx<- V[,1]*coef[mDay,1] +
   V[,2]*coef[mDay,2] +
   V[,3]*coef[mDay,3]
 plot(F30Approx,xlab = "Runner",ylab="Split Times")
-points(split30F[5])
-points(split30F[180])
-points(split30F[331])
-points(split30F[350])
+lines(F30Approx)
+points(split30F[5,])
+points(split30F[180,])
+points(split30F[331,])
+points(split30F[350,])
 ```
 
 - If **F30Approx** is your approximate matrix then find the discrepancies 
