@@ -141,7 +141,7 @@ data matrix.
 ```{r}
 coef<- svdF$u%*%Dsvd
 coef[,1]<- -1* coef[,1]
-mDay<- 360
+mDay<- 6
 #
 F30Approx<- V[,1]*coef[mDay,1] + 
   V[,2]*coef[mDay,2] +
